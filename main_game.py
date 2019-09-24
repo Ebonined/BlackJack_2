@@ -26,7 +26,7 @@ while True and conti == True: # Second while loop to begin game play
                 player.stake(stake)
                 print(f'\nYour bet of {stake} has accepted\nYour new balance is {player.money}')
         except:
-            print('\nError!! only ingeters are accepted\nTry again')
+            print('\nError!! only ingeters are accepted \nTry again')
         else:
             break
     
