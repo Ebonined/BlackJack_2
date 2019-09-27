@@ -1,5 +1,4 @@
 from objects import Profile, Card, Deck, CompProfile, card_display, print_card
-
 print('------------------------------------------')
 print('| *Welcome to object oriented BlackJack* |')
 print('------------------------------------------')
@@ -11,7 +10,7 @@ while True:  # First while loop to ask player for Name
         print(player)
         break
     else:
-        print(f'Your input {player_name} is less than 6 characters\nTry again!!.. ')
+        print(f'Your input {player_name} is less than 6 characters\nTry again!!.. ') 
 conti = True
 
 while True and conti == True: # Second while loop to begin game play
@@ -94,7 +93,7 @@ while True and conti == True: # Second while loop to begin game play
             comp_dealer.playercards[0] = comp_hidden
             print_card(comp_dealer, player, True)
 
-            # Checks if Computer Dealer already has a BLACKJACK 'BJ'
+            # Checks if Computer Dealer already has a BLACKJACK 'BJ' 
             if comp_dealer.check_bust() == 'BJ':
                 bet_won = player.deposite(stake, 1)
                 print(f'BLACKJACK!! {player.name}, you won the bet and gained {bet_won}!!!\nYour new balance is {player.money}')
